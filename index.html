@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/parking-meter.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Parquimetro</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <header>
+            <h1>Parquímetro Virtual</h1>
+
+            <button type="button" id="tema">🌙</button>
+        </header>
+
+        <main>
+            <section>
+                <label for="valor">Valor pago (R$):</label>
+                <input id="valor" name="valor" type="number" placeholder="Ex: 5,00" required>
+
+                <button type="button" id="calculo">Calcular</button>
+            </section>
+
+            <section>
+                <h2>Resultado</h2>
+
+                <p id="tempo"></p>
+                <p id="troco"></p>
+                <p id="mensagem"></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
